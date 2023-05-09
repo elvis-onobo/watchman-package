@@ -1,12 +1,13 @@
 {
   "name": "@trywatchman/watchman",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Smart error reporting for applications in production environments",
-  "type": "module",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "type": "commonjs",
   "scripts": {
     "test": "jest",
-    "start": "node --experimental-specifier-resolution=node index.js"
+    "start": "babel-node index.js",
+    "build": "babel src -d dist"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,7 @@
     "axios": "^1.4.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.21.5",
     "@babel/core": "^7.21.8",
     "@babel/preset-env": "^7.21.5",
     "babel-jest": "^29.5.0",

@@ -1,4 +1,4 @@
-import Watchman from "../lib";
+import Watchman from "../src/lib";
 
 jest.mock("../lib")
 
