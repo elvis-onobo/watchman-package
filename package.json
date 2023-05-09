@@ -1,6 +1,6 @@
 {
   "name": "@trywatchman/watchman",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Smart error reporting for applications in production environments",
   "type": "module",
   "main": "index.js",
